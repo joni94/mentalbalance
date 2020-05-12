@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+
+}
+
+
+/* header
+============================================*/
+header {
+
+  background-image:url(../image/forest-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9em;
+  position: relative;
+}
+
+
+
+.main-title {
+  text-align: center;
+  font-size: 3em;
+  color: #000000;
+  font-weight: 700;
+}
+
+.main-title-mobile {
+  display: none;
+}
+
+
+.sub-title {
+  text-align: center;
+  transform: translateY(1.5em);
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+span {
+  font-weight: 900;
+}
+
+
+
+/* nav bar
+============================================================*/
+
+nav {
+  position: absolute;
+  width: 100%;
+  background-color: #00bb00;
+  position: relative;
+
+
+
+}
+
+nav ul {
+
+text-align: center;
+
+}
+
+nav li {
+
+  display: inline-block;
+  margin: 1em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 0.82em 0.5em 0.9em 0.5em;
+  border-radius: 4px;
+
+}
+
+nav li a:hover,
+nav li a:focus {
+  color: black;
+  background-color: #00FF9B;
+  background-size: cover;
+
+
+}
+
+nav ul li {
+  position: relative; /*this is to make the drop-down meny vertical (if absolute is added in nav ul li ul) */
+}
+
+nav ul li ul
+{
+  position: absolute;
+  display: none;
+  background-color: #00BB00;
+  top: 2.4em;
+  padding: 0;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  border: 0;
+
+}
+
+nav ul li ul li{
+  width: 219px;
+  margin: 0;
+  height: 2em;
+  text-align: left;
+
+
+}
+
+nav ul li ul li a {
+
+
+  padding: 8px 25px 8px 25.6px;
+  border-radius: 4px;
+
+
+}
+
+.blog-drop {
+
+  height: cover;
+  top: 2.4em;
+  padding-top: .4em;
+
+}
+
+.newest-article:hover,
+.newest-article:focus {
+
+  padding-right: 71px;
+
+}
+
+.first-article:hover,
+.first-article:focus {
+  padding-right: 99px;
+  padding-bottom: 11px;
+}
+
+
+
+
+
+nav ul li:hover ul {
+    display: block;
+    z-index: 2;
+}
+
+.ul-other {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+
+
+
+}
+
+.li-other {
+    height: 2.2em;
+    width: 215px;
+    margin: 0 auto;
+    position: relative;
+    top: 0.4em;
+
+
+}
+
+.li-other:hover,
+.li-other:focus {
+  background-color:
+}
+
+.li-other a {
+  width: 100%;
+
+}
+
+
+
+
+.other-a:hover,
+.other-a:focus {
+  background-color: #00ff9b;
+  padding: 0;
+  padding: 8px 124px 8px 24px;
+
+}
+
+.other-a1:hover,
+.other-a1:focus {
+  background-color: #00ff9b;
+
+}
+
+
+body {
+  background-color: #232323;
+
+}
+
+
+/* two other grids (contact/additional literature)
+==========================================================================*/
+
+.other-title {
+  color: #00bb00;
+  font-size: 34px;
+  text-align: center;
+  margin: 1em;
+}
+
+.other-main ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 400px));
+  grid-auto-rows: 250px;
+  list-style: none;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  color: white;
+
+}
+
+.other-main ul li {
+  background-color: #232323;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  border: 2px solid #00bb00;
+
+
+
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+
+  margin: 1em auto;
+  width: 50%;
+  left: 0;
+  right: 0;
+  padding: .8em;
+  text-decoration: none;
+  background-color: #00bb00;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+
+.button:hover,
+.button:focus {
+  background-color: #00ff9b;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* version smaller than 960px
+===============================================================*/
+
+
+@media (max-width: 1030px) {
+
+  .main-title {
+    display : none;
+  }
+
+  .main-title-mobile {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2em;
+    width: cover;
+  }
+
+}
+
+
+
+
+
+/* versmaller than 475 px
+=========================================================================*/
+@media (max-width: 1030px) {
+
+  .main-title {
+    display : none; }
+
+  .main-title-mobile {
+    display: block;
+    position: absolute;
+    top: 2.8em;
+    left: 10%;
+    right: 10%;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2em;
+    margin: 0;
+    width: cover;
+  }
+
+.sub-title {
+  position: absolute;
+  font-size: 1.5em;
+  top: 6em;
+  left:20%;
+  right:20%;
+}
+
+/* nav background
+==========================================================*/
+
+
+
+nav ul li:hover ul {
+  display: none;
+}
